@@ -22,6 +22,13 @@ which will be used to locate the cluster ID.
 Set `export KUBECONFIG` to the local cluster (Rancher Manager) kubeconfig which will apply the patch, and using the cluster's UI friendly name:
 
 ```bash
+./enable_jwt.sh cluster-name
+```
+to create a new config.
+
+For existing configs, where it was previously created:
+
+```bash
 ./patch_jwt.sh cluster-name
 ```
 
